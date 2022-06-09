@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'home_page.dart';
+import 'package:trading/pages/next_page.dart';
+import 'package:trading/pages/register_page.dart';
 
 class LandPage extends StatefulWidget {
   const LandPage({Key? key}) : super(key: key);
@@ -49,22 +49,21 @@ class _LandPageState extends State<LandPage> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 25.0),
             child: GestureDetector(
-              onTap: () {},
-              child: Container(
-                padding: const EdgeInsets.all(20),
-                decoration: BoxDecoration(
-                  color: Colors.orange,
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: const Center(
-                  child: Text(
-                    'Siguiente',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 18,
-                    ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return const NextPage();
+                    },
                   ),
+                );
+              },
+              child: const Text(
+                'Siguiente',
+                style: TextStyle(
+                  color: Colors.orange,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ),
@@ -84,7 +83,7 @@ class _LandPageState extends State<LandPage> {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return const Home();
+                          return const RegisterPage();
                         },
                       ),
                     );
