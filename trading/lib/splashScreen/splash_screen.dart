@@ -8,7 +8,7 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AnimatedSplashScreen(
-        duration: 6000,
+        duration: 3000,
         splashIconSize: 300,
         splash: Column(
           children: [
@@ -22,7 +22,7 @@ class SplashScreen extends StatelessWidget {
             ),
           ],
         ),
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.blueGrey,
         nextScreen: const LandPage());
   }
 }

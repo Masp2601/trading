@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trading/pages/next_page.dart';
-import 'package:trading/pages/register_page.dart';
+import 'package:trading/authentication/register_page.dart';
 
 class LandPage extends StatefulWidget {
   const LandPage({Key? key}) : super(key: key);
@@ -23,7 +23,7 @@ class _LandPageState extends State<LandPage> {
           const Text(
             'Tu dinero. Tu eleccion.',
             style: TextStyle(
-                fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black),
+                fontSize: 28, fontWeight: FontWeight.bold, color: Colors.black),
           ),
           const SizedBox(
             height: 5.0,
@@ -31,14 +31,14 @@ class _LandPageState extends State<LandPage> {
           const Text(
             'Con la confianza de Millones de personas en todo el mundo.',
             style: TextStyle(
-                fontSize: 10,
+                fontSize: 14,
                 fontWeight: FontWeight.bold,
                 color: Colors.black45),
           ),
           const Text(
             'Comience a invertir hoy...',
             style: TextStyle(
-                fontSize: 12,
+                fontSize: 14,
                 fontWeight: FontWeight.bold,
                 color: Colors.black45),
           ),
@@ -64,6 +64,7 @@ class _LandPageState extends State<LandPage> {
                 style: TextStyle(
                   color: Colors.orange,
                   fontWeight: FontWeight.bold,
+                  fontSize: 18,
                 ),
               ),
             ),
@@ -93,6 +94,7 @@ class _LandPageState extends State<LandPage> {
                     style: TextStyle(
                       color: Colors.orange,
                       fontWeight: FontWeight.bold,
+                      fontSize: 18,
                     ),
                   ),
                 ),
@@ -101,7 +103,7 @@ class _LandPageState extends State<LandPage> {
           ),
         ],
       ),
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.blueGrey,
     );
   }
 }

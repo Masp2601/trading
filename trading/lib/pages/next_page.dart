@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:trading/pages/login_page.dart';
-import 'package:trading/pages/register_page.dart';
+import 'package:trading/authentication/login_page.dart';
+import 'package:trading/authentication/register_page.dart';
 
 class NextPage extends StatefulWidget {
   const NextPage({Key? key}) : super(key: key);
@@ -23,7 +23,7 @@ class _NextPageState extends State<NextPage> {
           const Text(
             'Empezemos',
             style: TextStyle(
-                fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black),
+                fontSize: 30, fontWeight: FontWeight.bold, color: Colors.black),
           ),
           const SizedBox(
             height: 5.0,
@@ -31,14 +31,14 @@ class _NextPageState extends State<NextPage> {
           const Text(
             'No necesitas dinero para crear tu cuenta',
             style: TextStyle(
-                fontSize: 10,
+                fontSize: 14,
                 fontWeight: FontWeight.bold,
                 color: Colors.black45),
           ),
           const Text(
             'Con nosotros lograras lo que con nadie más...',
             style: TextStyle(
-                fontSize: 12,
+                fontSize: 14,
                 fontWeight: FontWeight.bold,
                 color: Colors.black45),
           ),
@@ -63,6 +63,7 @@ class _NextPageState extends State<NextPage> {
                 'Registrarse',
                 style: TextStyle(
                   color: Colors.orange,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -92,6 +93,7 @@ class _NextPageState extends State<NextPage> {
                     'Ingresar',
                     style: TextStyle(
                       color: Colors.orange,
+                      fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -101,7 +103,7 @@ class _NextPageState extends State<NextPage> {
           ),
         ],
       ),
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.blueGrey,
     );
   }
 }
