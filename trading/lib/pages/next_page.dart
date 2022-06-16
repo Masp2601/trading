@@ -13,95 +13,101 @@ class _NextPageState extends State<NextPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        //imagen
-        children: [
-          Image.asset('assets/puzzle.png'),
-          const SizedBox(
-            height: 15.0,
-          ),
-          const Text(
-            'Empezemos',
-            style: TextStyle(
-                fontSize: 30, fontWeight: FontWeight.bold, color: Colors.black),
-          ),
-          const SizedBox(
-            height: 5.0,
-          ),
-          const Text(
-            'No necesitas dinero para crear tu cuenta',
-            style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.bold,
-                color: Colors.black45),
-          ),
-          const Text(
-            'Con nosotros lograras lo que con nadie más...',
-            style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.bold,
-                color: Colors.black45),
-          ),
-          const SizedBox(
-            height: 25.0,
-          ),
-          //boton para siguiente pagina
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 25.0),
-            child: GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return const RegisterPage();
-                    },
-                  ),
-                );
-              },
-              child: const Text(
-                'Registrarse',
-                style: TextStyle(
-                  color: Colors.orange,
-                  fontSize: 20,
+      body: Padding(
+        padding: const EdgeInsets.all(26.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          //imagen
+          children: [
+            Image.asset('assets/puzzle.png'),
+            const SizedBox(
+              height: 15.0,
+            ),
+            const Text(
+              'Empezemos',
+              style: TextStyle(
+                  fontSize: 30,
                   fontWeight: FontWeight.bold,
+                  color: Colors.black),
+            ),
+            const SizedBox(
+              height: 5.0,
+            ),
+            const Text(
+              'No necesitas dinero para crear tu cuenta',
+              style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black45),
+            ),
+            const Text(
+              'Con nosotros lograras lo que con nadie más...',
+              style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black45),
+            ),
+            const SizedBox(
+              height: 25.0,
+            ),
+            //boton para siguiente pagina
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 25.0),
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return const RegisterPage();
+                      },
+                    ),
+                  );
+                },
+                child: const Text(
+                  'Registrarse',
+                  style: TextStyle(
+                    color: Colors.orange,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ),
-          ),
-          const SizedBox(
-            height: 25,
-          ),
-          //Loguiarse
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 25.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) {
-                          return const LoginPage();
-                        },
+            const SizedBox(
+              height: 25,
+            ),
+            //Loguiarse
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 25.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const LoginPage();
+                          },
+                        ),
+                      );
+                    },
+                    child: const Text(
+                      'Ingresar',
+                      style: TextStyle(
+                        color: Colors.orange,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
                       ),
-                    );
-                  },
-                  child: const Text(
-                    'Ingresar',
-                    style: TextStyle(
-                      color: Colors.orange,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
       backgroundColor: Colors.blueGrey,
     );

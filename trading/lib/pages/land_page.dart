@@ -14,6 +14,7 @@ class _LandPageState extends State<LandPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         //imagen
         children: [
           Image.asset('assets/dinero.png'),
