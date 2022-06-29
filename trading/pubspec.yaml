@@ -38,6 +38,8 @@ dependencies:
   iconsax: ^0.0.8
   image_picker: ^0.8.5+3
   get: ^4.6.5
+  http: ^0.13.4
+  qr_flutter: ^4.0.0
 
 dev_dependencies:
   flutter_test:
