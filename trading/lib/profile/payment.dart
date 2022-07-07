@@ -27,111 +27,6 @@ class _PaymentProfileState extends State<PaymentProfile> {
           const SizedBox(
             height: 15.0,
           ),
-          //boton pago tarjeta
-          Material(
-            color: Colors.transparent,
-            elevation: 0,
-            borderRadius: BorderRadius.circular(10),
-            clipBehavior: Clip.antiAliasWithSaveLayer,
-            child: InkWell(
-              splashColor: Colors.transparent,
-              onTap: () {},
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.transparent,
-                  border: Border.all(color: Colors.black38, width: 4.1),
-                  shape: BoxShape.rectangle,
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(10),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Image.asset(
-                        'assets/card.png',
-                        height: 40,
-                        width: 55,
-                        fit: BoxFit.cover,
-                      ),
-                      const SizedBox(
-                        height: 10,
-                        width: 15,
-                      ),
-                      const Text(
-                        'Tarjeta de Debito',
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          ),
-          const SizedBox(
-            height: 15,
-          ),
-          //boton banco
-          Material(
-            color: Colors.transparent,
-            elevation: 0,
-            borderRadius: BorderRadius.circular(10),
-            clipBehavior: Clip.antiAliasWithSaveLayer,
-            child: InkWell(
-              splashColor: Colors.transparent,
-              onTap: () {},
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.transparent,
-                  border: Border.all(color: Colors.black38, width: 4.1),
-                  shape: BoxShape.rectangle,
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(10),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Image.asset(
-                        'assets/bank.png',
-                        height: 40,
-                        width: 40,
-                        fit: BoxFit.cover,
-                      ),
-                      const SizedBox(
-                        height: 10,
-                        width: 15,
-                      ),
-                      const Text(
-                        'Transferencia Bancaria',
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          ),
-          const SizedBox(
-            height: 10.0,
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: const [Text("Otros metodos de pago")],
-          ),
-          const SizedBox(
-            height: 10.0,
-          ),
           //boton pago paypal
           Column(
             children: [
@@ -183,7 +78,7 @@ class _PaymentProfileState extends State<PaymentProfile> {
             ],
           ),
           const SizedBox(
-            height: 300.0,
+            height: 500.0,
           ),
           //boton para continuar
           Padding(

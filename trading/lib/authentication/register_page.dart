@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'credentials_page.dart';
 import 'login_page.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -237,7 +238,16 @@ class _RegisterPageState extends State<RegisterPage> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
                   child: GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const Credentialscreen();
+                          },
+                        ),
+                      );
+                    },
                     child: Container(
                       padding: const EdgeInsets.all(20),
                       decoration: BoxDecoration(

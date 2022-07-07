@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:trading/pages/contact_page.dart';
 
 class SettingsProfile extends StatefulWidget {
-  SettingsProfile({Key? key}) : super(key: key);
+  const SettingsProfile({Key? key}) : super(key: key);
 
   @override
   State<SettingsProfile> createState() => _SettingsProfileState();
@@ -57,7 +58,16 @@ class _SettingsProfileState extends State<SettingsProfile> {
                         fontWeight: FontWeight.normal,
                         color: Colors.black),
                   ),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return ContactPage();
+                        },
+                      ),
+                    );
+                  },
                 ),
               ),
               const SizedBox(
